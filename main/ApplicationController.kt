@@ -1,13 +1,4 @@
 
-import android.app.Activity
-import android.app.Application
-import android.content.Context
-import androidx.lifecycle.LifecycleObserver
-import androidx.lifecycle.ProcessLifecycleOwner
-import com.google.android.material.bottomsheet.BottomSheetDialog
-import io.reactivex.rxjava3.disposables.CompositeDisposable
-import timber.log.Timber
-
 class ApplicationController : Application(), LifecycleObserver {
     private var recordedActivity: Activity? = null
     private var recordBottomDialogStatic: BottomSheetDialog? = null
